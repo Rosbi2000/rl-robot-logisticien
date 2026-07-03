@@ -1,0 +1,10 @@
+# Ignorer datasets et fichiers lourds
+data/
+*.mp4
+*.avi
+*.zip
+*.h5
+
+# Ignorer caches Python
+__pycache__/
+.ipynb_checkpoints/
