@@ -17,3 +17,5 @@ Projet de Reinforcement Learning (Q-Learning vs DQN) pour un robot autonome capa
 
 ## Licence
 Ce projet est sous licence MIT.
+
+## Test de commit et push
