@@ -9,7 +9,6 @@ Projet de Reinforcement Learning (Q-Learning vs DQN) pour un robot autonome capa
 
 ## Structure du projet
 - `environment/` : environnement de simulation
-- `models/` : implémentations Q-Learning et DQN
 - `notebooks/` : notebooks d’entraînement
 - `results/` : courbes et métriques
 - `demo/` : vidéo de démonstration

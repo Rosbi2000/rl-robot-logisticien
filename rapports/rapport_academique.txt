@@ -1,0 +1,37 @@
+############ Rapport académique
+
+# 1. Introduction
+Le projet **RL Robot Logisticien** s’inscrit dans le cadre de l’apprentissage par renforcement 
+appliqué à la logistique. L’objectif est de simuler un robot évoluant dans un entrepôt, devant
+atteindre des points de livraison tout en évitant des obstacles.
+Deux approches sont comparées : Q-Learning tabulaire et Deep Q-Network (DQN).
+
+# 2. Méthodologie
+- **Environnement** : grille 5x5 avec obstacles et points de livraison.  
+- **Q-Learning** : mise à jour de la Q-table selon la règle de Bellman.  
+- **DQN** : approximation des valeurs Q par un réseau neuronal (2 couches cachées de 64 neurones).  
+- **Hyperparamètres** : taux d’apprentissage, facteur de discount, epsilon-greedy.  
+- **Évaluation** : récompenses cumulées par épisode et trajectoires visuelles.
+
+# 3. Résultats
+- **Q-Learning** : convergence progressive, mais limité par la taille de la Q-table.  
+- **DQN** : convergence plus rapide et meilleure généralisation.  
+- **Visualisations** :  
+  - Courbes de convergence (`results/qlearning_rewards.png`, `results/dqn_rewards.png`).  
+  - Vidéos démo (`demo/demo_qlearning.mp4`, `demo/demo_dqn.mp4`).  
+
+# 4. Discussion
+- Q-Learning est adapté aux environnements simples, mais devient impraticable lorsque l’espace d’état
+grandit.  
+- DQN permet de généraliser et de traiter des environnements plus complexes grâce au réseau neuronal.  
+- Les vidéos démontrent visuellement la différence de performance entre les deux approches.
+
+# 5. Conclusion
+Le projet montre l’évolution d’un agent logistique avec deux méthodes d’apprentissage par renforcement.  
+- Q-Learning : simple mais limité.  
+- DQN : plus puissant et extensible.  
+Perspectives : multi-agents, contraintes logistiques, algorithmes avancés (Double DQN, PPO).
+
+### 6. Bibliographie
+- Sutton & Barto, *Reinforcement Learning: An Introduction*.  
+- Mnih et al., *Playing Atari with Deep Reinforcement Learning* (2013).  
